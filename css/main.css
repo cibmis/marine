@@ -6294,11 +6294,6 @@ main .picture {
 main .spacer {
   margin-top: 20px;
 }
-main .pull-down {
-  display: table-cell;
-  vertical-align: bottom;
-  float: none;
-}
 @media (min-width: 768px) {
   main .row-background {
     background-color: #FFB273;
