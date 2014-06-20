@@ -19,6 +19,7 @@
         <!-- Google Web Fonts -->
         <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Cabin:400,700italic' rel='stylesheet' type='text/css'>
+        <script src="js/test.js"></script>
 
                 <!-- Main Style Sheet -->
         <link rel="stylesheet" href="css/main.css">
@@ -144,78 +145,39 @@
         </header>
 
         <main role="main">
-            <div class="container">
-            <div class="row">
-                <section class="content-primary col-sm-8">
-                    <div id="homepage-feature" class="carousel slide">
-                        <ol class="carousel-indicators">
-                            <li data-target="#homepage-feature" data-slide-to="0" class="active"></li>
-                            <li data-target="#homepage-feature" data-slide-to="1"></li>
-                            <li data-target="#homepage-feature" data-slide-to="2"></li>
-                            <li data-target="#homepage-feature" data-slide-to="3"></li>
-                        </ol>
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                              <img src="img/slide1.gif" alt="Personal Banking">
-                            </div>
-                            <div class="item">
-                                <img src="img/slide2.gif" alt="Business">
-                            </div>
-                            <div class="item">
-                                <img src="img/slide_H.gif" alt="Rates and Offers">
-                            </div>
-                            <div class="item">
-                                <img src="img/slide_RDA.gif" alt="Remote Deposit Anywhere">
-                            </div>
-                        </div><!-- /.carousel-inner -->
-                        <!-- Carousel Controls -->
-                        <a class="left carousel-control" href="#homepage-feature" data-slide="prev">
-                            <span class="icon fa fa-chevron-left"></span>
-                        </a>
-                        <a class="right carousel-control" href="#homepage-feature" data-slide="next">
-                            <span class="icon fa fa-chevron-right"></span>
-                        </a>
-                    </div><!-- /#homepage-feature.carousel -->
-
-                    <!-- <h2>Remote Deposit Anywhere</h2>
-                    <p>Deposit checks from anywhere on your mobile device, with our Mobile Banking App</p>
-                    <p><a class="btn btn-primary pull-right" href="mobile.html">Learn more <span class="icon fa fa-arrow-circle-right"></span></a></p> -->
-
-                </section>
-                <section class="content-secondary col-sm-4">
-                    <h3>Recent News</h3>
-                    <h4>Target Breach</h4>
-                    <p>Target Corporation announced a compromise of data, which impacts millions of debit and credit card users. If you used your card at a physical Target store location(s) from November 27 - December 15, 2013 you may be subject to fraud on your account.</p>
-                    <p><a class="btn btn-primary pull-right" href="#">Read more <span class="icon fa fa-arrow-circle-right"></span></a></p>
-                    <h4>Heartbleed Vulnerability</h4>
-                    <p>The Heartblled vulnerability and Online Banking.  What you need to know to protect yourself online.<p>
-                    <p><a class="btn btn-primary pull-right" href="#">Read more <span class="icon fa fa-arrow-circle-right"></span></a></p>
-                </section>
+          <div class="container">
+            <form class="form-horizontal" role="form" name="acceleration">
+              <div class="form-group">
+                <label for="inputBalance" class="control-label col-xs-10">What is your average Checking/Savings account balances?</label>
+                  <div class="col-xs-2">
+                    <input type="number" min="0" max="250000" step="100" class="form-control" name="balance" id="balance" placeholder="0">
+                  </div>
               </div>
-              <div class="row row-background img-rounded spacer">
-                <section class="content-tertiary">
-                    <div class="col-sm-4">
-                      <img class="picture img-thumbnail" src="img/Online_Bank.jpg">
-                      <p>Access your account information and conduct banking transactions securely and easily with free Online Banking.  Apply today and enjoy all the convenience and benefits of banking 24/7 including eStatements and Bill-Pay.</p>
-                      <p><a class="btn btn-primary pull-right" href="#">Apply Now <span class="icon fa fa-arrow-circle-right"></span></a></p>
-                    </div>
-                    <div class="col-sm-4">
-                      <img class="picture img-thumbnail" src="img/img-p12a.jpg" width="100%">
-                      <p>The Central Illinois Bank FlashPoint Card is a checking account debit card you can use wherever MasterCard® is accepted. It works just like a credit card, except that purchases are electronically deducted from your Central Illinois Bank checking account.</p>
-                      <p><a class="btn btn-primary pull-right" href="#">Get yours today <span class="icon fa fa-arrow-circle-right"></span></a></p>
-                    </div>
-                    <div class="col-sm-4">
-                      <a href="http://www.illinoismarathon.com/index.php"><img class="picture img-thumbnail" src="img/ILLmarathonV.jpg" width="100%"></a>
-                      <p>Central Illinois Bank is a proud sponser of the Illinois Marathon.  Participate in 5k, Half Marathon and Marathon events.</p>
-                      <p><a class="btn btn-primary pull-right" href="#">Read more <span class="icon fa fa-arrow-circle-right"></span></a></p>
-                    </div>
-
-                  </section>
+              <div class="form-group">
+                <label for="inputFunds" class="control-label col-xs-10">What funds from other accounts could you add to earn more money?</label>
+                  <div class="col-xs-2">
+                    <input type="number" min="0" max="250000" step="100" class="form-control" name="funds" id="funds" placeholder="0">
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="inputATM" class="control-label col-xs-10">How many times a month do you use another bank's ATM? **</label>
+                  <div class="col-xs-2">
+                    <input type="number" min="0" max="25" step="1" class="form-control" name="atm" id="atm"  placeholder="0">
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="Total" class="control-label col-xs-10">Total Savings</label>
+                  <div class="col-xs-2">
+                    <input type="text" id="total" name="total" placeholder="$0">
+                  </div>
+              </div>
+              <div class="form-group">
+                <div class="pull-right">
+                  <button type="submit" class="btn btn-primary" onclick="calculate(this.form)">Calculate</button>
                 </div>
-            </div><!-- /.row -->
-            </div><!-- /.container -->
-        </main>
+              </div>
+            </form>
+          </main>
 
         <footer role="contentinfo">
 
@@ -240,7 +202,7 @@
 
               <div class="about col-sm-12 col-md-8">
                 <h3>About Us</h3>
-                <p>Central Illinois Bank, as a part of CIBM Bank, serves communities throughout Central Illinois.  At our full-service banking offices you'll find a full array of Personal and Business services to help you create the life you want and to help your business continue to be successful. We work hard to be your partner and we understand that this means listening and responding to the unique needs of you and your company. We are committed to creating customized solutions to assist you in achieving growth and stability.</p>
+                <p>Central Illinois Bank is a branch of CIBM Bank which serves communities throughout Central Illinois.  At our full-service banking offices you'll find a full array of Personal and Business services to help you create the life you want and to help your business continue to be successful. We work hard to be your partner and we understand that this means listening and responding to the unique needs of you and your company. We are committed to creating customized solutions to assist you in achieving growth and stability.</p>
                 <p><a class="btn btn-default btn-xs pull-right" href="#">Learn more <span class="fa fa-arrow-circle-right"></span></a></p>
               </div>
             </div><!-- /.row -->
@@ -252,11 +214,12 @@
               <!-- <li><a href="#" title="Google+ Profile"><span class="icon fa fa-google-plus"></span></a></li> -->
             </ul>
 
-            <p class="footer-brand"><a href="index.html"><img src="img/ciblogo.png" width="120" alt="CIB Bank"></a></p>
+            <p class="footer-brand"><a href="index.html"><img src="img/ciblogo.png" width="120" alt="Central Illinois Bank'"></a></p>
             <p class="footer-brand"><img src="img/footer-logo.png"></p>
 
           </div><!-- /.container -->
         </footer>
+
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
@@ -265,6 +228,7 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/bootstrap-hover-dropdown.js"></script>
+
 
         <script>
             var _gaq=[['_setAccount','UA-42196149-1'],['_trackPageview']];
