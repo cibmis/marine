@@ -19,7 +19,6 @@
         <!-- Google Web Fonts -->
         <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Cabin:400,700italic' rel='stylesheet' type='text/css'>
-        <script src="js/test.js"></script>
 
                 <!-- Main Style Sheet -->
         <link rel="stylesheet" href="css/main.css">
@@ -50,7 +49,7 @@
                     <a href="locations.html" title="Locations"><i class="icon fa fa-map-marker fa-lg"></i> Locations</a>
                   </li>
                   <li>
-                    <a href="#" title="Careers"><i class="icon fa fa-briefcase fa-lg"></i> Careers</a>
+                    <a href="http://www.cibmcareers.com" title="Careers"><i class="icon fa fa-briefcase fa-lg"></i> Careers</a>
                   </li>
                 </ul>
               </div><!-- Utility Nav -->
@@ -69,10 +68,10 @@
                   <ul class="nav navbar-nav">
                     <!-- Dropdowns for md and lg viewports -->
                     <li>
-                      <a href="#" class="visible-md visible-lg"><i class="icon fa fa-home"></i> Home</a>
+                      <a href="index.html" class="visible-md visible-lg"><i class="icon fa fa-home"></i> Home</a>
                     </li>
                     <li class="dropdown visible-md visible-lg">
-                        <a href="personal.html" class="dropdown-toggle disabled" data-toggle="dropdown" data-hover="dropdown"><i class="icon fa fa-user"></i> Personal <b class="caret"></b></a>
+                        <a href="personal.html" class="dropdown-toggle disbaled" data-toggle="dropdown" data-hover="dropdown"><i class="icon fa fa-user"></i> Personal <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                           <li><a href="acceleration.html">Acceleration Banking</a><a href=""></a></li>
                           <li class="divider"></li>
@@ -87,7 +86,7 @@
                         </ul>
                     </li>
                     <li class="dropdown visible-md visible-lg">
-                        <a href="business.html" class="dropdown-toggle disabled" data-toggle="dropdown" data-hover="dropdown"><i class="icon fa fa-users"></i> Business <b class="caret"></b></a>
+                        <a href="business.html" class="dropdown-toggle disbled" data-toggle="dropdown" data-hover="dropdown"><i class="icon fa fa-users"></i> Business <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                           <li><a href="businesschecking.html">Checking Solutions</a></li>
                           <li><a href="businesssavings.html">Savings Solutions</a></li>
@@ -143,41 +142,37 @@
               </div><!--/.container -->
             </nav>
         </header>
-
         <main role="main">
           <div class="container">
-            <form class="form-horizontal" role="form" name="acceleration">
-              <div class="form-group">
-                <label for="inputBalance" class="control-label col-xs-10">What is your average Checking/Savings account balances?</label>
-                  <div class="col-xs-2">
-                    <input type="number" min="0" max="250000" step="100" class="form-control" name="balance" id="balance" placeholder="0">
-                  </div>
+            <div class="row row-background img-rounded">
+              <div class="col-md-2 col-md-offset-1">
+                <a href="#acceleration"><img src="http://placehold.it/175x175" class="img-circle center-block"></a>
+                <p><a href="#acceleration"><h3 class="text-center">Acceleration Banking</h3></a></p>
               </div>
-              <div class="form-group">
-                <label for="inputFunds" class="control-label col-xs-10">What funds from other accounts could you add to earn more money?</label>
-                  <div class="col-xs-2">
-                    <input type="number" min="0" max="250000" step="100" class="form-control" name="funds" id="funds" placeholder="0">
-                  </div>
+              <div class="col-md-2">
+                <a href="#freechecking"><img src="http://placehold.it/175x175" class="img-circle center-block"></a>
+                <p><a href="#freechecking"><h3 class="text-center">Free<br> Checking</h3></a></p>
               </div>
-              <div class="form-group">
-                <label for="inputATM" class="control-label col-xs-10">How many times a month do you use another bank's ATM? **</label>
-                  <div class="col-xs-2">
-                    <input type="number" min="0" max="25" step="1" class="form-control" name="atm" id="atm"  placeholder="0">
-                  </div>
+              <div class="col-md-2">
+                <a href="#personalnow"><img src="http://placehold.it/175x175" class="img-circle center-block"></a>
+                <p><a href="#personalnow"><h3 class="text-center">Personal<br> NOW</h3></a></p>
               </div>
-              <div class="form-group">
-                <label for="Total" class="control-label col-xs-10">Total Savings</label>
-                  <div class="col-xs-2">
-                    <input type="text" id="total" name="total" placeholder="$0">
-                  </div>
+              <div class="col-md-2">
+                <a href="#alternative"><img src="http://placehold.it/175x175" class="img-circle center-block"></a>
+                <p><a href="#alternative"><h3 class="text-center">Alternative Checking</h3></a></p>
               </div>
-              <div class="form-group">
-                <div class="pull-right">
-                  <button type="submit" class="btn btn-primary" onclick="calculate(this.form)">Calculate</button>
-                </div>
+              <div class="col-md-2">
+                <a href="#foryou"><img src="http://placehold.it/175x175" class="img-circle center-block"></a>
+                <p><a href="#foryou"><h3 class="text-center">What's right for you?</h3></a></p>
               </div>
-            </form>
-          </main>
+            </div><!-- row -->
+
+
+          </div>
+        </main>
+
+
+
 
         <footer role="contentinfo">
 
@@ -187,11 +182,11 @@
                 <div class="col-sm-4 col-md-4">
                   <h3></h3>
                   <ul>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#">Security Statement</a></li>
-                    <li><a href="#">FDIC Information</a></li>
-                    <li><a href="#">Account Disclousers</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms of use</a></li>
+                    <li><a href="security.html">Security Statement</a></li>
+                    <li><a href="fdic.html">FDIC Information</a></li>
+                    <li><a href="disclousers.html">Account Disclousers</a></li>
                   </ul>
                 </div>
                 <div class="col-sm-4 col-md-2">
@@ -202,7 +197,7 @@
 
               <div class="about col-sm-12 col-md-8">
                 <h3>About Us</h3>
-                <p>Central Illinois Bank is a branch of CIBM Bank which serves communities throughout Central Illinois.  At our full-service banking offices you'll find a full array of Personal and Business services to help you create the life you want and to help your business continue to be successful. We work hard to be your partner and we understand that this means listening and responding to the unique needs of you and your company. We are committed to creating customized solutions to assist you in achieving growth and stability.</p>
+                <p>Central Illinois Bank, as a part of CIBM Bank, serves communities throughout Central Illinois.  At our full-service banking offices you'll find a full array of Personal and Business services to help you create the life you want and to help your business continue to be successful. We work hard to be your partner and we understand that this means listening and responding to the unique needs of you and your company. We are committed to creating customized solutions to assist you in achieving growth and stability.</p>
                 <p><a class="btn btn-default btn-xs pull-right" href="#">Learn more <span class="fa fa-arrow-circle-right"></span></a></p>
               </div>
             </div><!-- /.row -->
@@ -214,12 +209,11 @@
               <!-- <li><a href="#" title="Google+ Profile"><span class="icon fa fa-google-plus"></span></a></li> -->
             </ul>
 
-            <p class="footer-brand"><a href="index.html"><img src="img/ciblogo.png" width="120" alt="Central Illinois Bank'"></a></p>
+            <p class="footer-brand"><a href="index.html"><img src="img/ciblogo.png" width="120" alt="CIB Bank"></a></p>
             <p class="footer-brand"><img src="img/footer-logo.png"></p>
 
           </div><!-- /.container -->
         </footer>
-
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
@@ -228,7 +222,6 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/bootstrap-hover-dropdown.js"></script>
-
 
         <script>
             var _gaq=[['_setAccount','UA-42196149-1'],['_trackPageview']];

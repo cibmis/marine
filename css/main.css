@@ -6527,6 +6527,13 @@ main .accel {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+main .anchor {
+  color: #ff7400;
+  text-decoration: none;
+}
+main .anchor:hover {
+  color: #ff7400;
+}
 main .white-back {
   background-color: #ffffff;
   border-style: solid;
