@@ -22,6 +22,9 @@
 
                 <!-- Main Style Sheet -->
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/alertify.default.css">
+        <link rel="stylesheet" href="css/alertify.core.css">
+        <link rel="stylesheet" href="css/alertify.bootstrap.css">
 
         <!-- Modernizr -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -149,7 +152,7 @@
                 <h1 class="anchor">Children's Online Privacy Protection Act</h1>
                 <h4>About Children’s Online Privacy</h4>
                 <p>The Children’s Online Privacy Protection Act (COPPA) was  passed to give parents increased control over what information is collected  from their children online and how such information is used. The law  applies to websites and services directed to, and which knowingly collect  information from, children under the age of 13. CIBM Bank’s Web sites and  online services are not directed to children under the age of 13, nor is information knowingly collected from them.</p>
-                <p>For information on COPPA  protections, visit the <a href="http://www.ftc.gov/opa/reporter/privacy/coppa.shtml" onClick="return confirm('Upon clicking ok, you will be leaving Central Illinois Bank website.  Click Cancel to remain.')" title="Federal Trade Commission COPPA" target="blank">Federal Trade Commission’s website</a></p>
+                <p>For information on COPPA  protections, visit the <a href="http://www.ftc.gov/opa/reporter/privacy/coppa.shtml" title="Federal Trade Commission COPPA" id="alert">Federal Trade Commission’s website</a></p>
               </div>
             </div><!-- row -->
 
@@ -209,6 +212,18 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/bootstrap-hover-dropdown.js"></script>
+        <script src="js/alertify.min.js"></script>
+        <script>
+          $("#alert").on('click', function (e){
+            e.preventDefault();
+            var href = this.href;
+            alertify.confirm("By clicking OK, you will be leaving Central Illnois Bank website, click Cancel to remain.", function (e) {
+              if (e) {
+                window.open(href);
+              }
+            });
+          });
+        </script>
 
         <script>
             var _gaq=[['_setAccount','UA-42196149-1'],['_trackPageview']];

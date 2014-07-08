@@ -106,7 +106,6 @@
                         <a href="about.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i class="icon fa fa-plus-square"></i> About <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                           <li><a href="presidentmessage.html">President's Message</a></li>
-                          <li><a href="subsidiaries.html">Banking Subsidiaries</a></li>
                           <li><a href="http://www.cibmcareers.com">Careers</a></li>
                         </ul>
                     </li>
@@ -170,16 +169,82 @@
                         (example: Auto Loan, Mortgage Payment, etc.)</li>
                       </ul>
                     </li>
-                  </li>Close your old bank accounts
+                  <li>Close your old bank accounts
                     <ul>
                       <li>Ensure that all checks and transactions have cleared before you close the account</li>
                       <li>Complete the Account Closing Form</li>
                       <li>Mail the completed form to your previous bank</li>
+                    </ul>
+                  </li>
                   </ol>
                 </p>
               </div>
             </div><!-- row -->
-          
+            <div class="row">
+              <div class="col-md-4">
+                <a href="documents/SwitchDDAuthIL.pdf" title="Switch Direct Deposit" target="blank"></i class="fa fa-file-pdf-o"></i>Switch Direct Deposit</a>
+              </div>
+              <div class="col-md-4">
+                <a href="documents/SwitchBPAuthIL.pdf" title="Switch Direct Deposit" target="blank"></i class="fa fa-file-pdf-o"></i>Switch Bill Payment Request</a>
+              </div>
+              <div class="col-md-4">
+                <a href="documents/Switch FAQs IL.pdf" title="Switch Direct Deposit" target="blank"></i class="fa fa-file-pdf-o"></i>Switch FAQ</a>
+              </div>
+            </div><!-- row -->
+            <div class="row">
+              <div class="col-md-12">
+                <p><strong>Frequently Asked Questions</strong><br />
+                <strong>Q.  What if I don't have my Central Illinois Bank account number?</strong><br />
+                A.  You'll need your Central Illinois Bank Account number to complete the forms and letters. You should complete all fields to ensure that your letters are accurate.</p>
+                   
+                <p><strong>Q. How can I close more than one old bank account?</strong><br />
+                A.  Easy enough, just follow the closing account instructions listed above for each of your accounts that you wish to close and forward the request to close account form to each Financial Institution.
+                   
+                <p><strong>Q. Who do I call if I have questions?</strong><br />
+                A.  If you have any questions regarding the Switch process, Online Banking or Online Bill Payment (personal or small business), please call your nearest Central Illinois Bank branch Office. We'll be happy to assist you.
+                   
+                <p><strong>Q. Can I switch my small business account to Central Illinois Bank?</strong><br />
+                A.  It's very easy to move your accounts to Central Illinois Bank, and still be able to write checks and access to your funds. Stop by your nearest branch and open your new Central Illinois Bank Small Business Checking account. Once you receive your new checks, move any excess balances from your old account (leaving enough to cover outstanding checks and automatic withdrawals), begin depositing into your new Central Illinois Bank account, and start using your new account. When your checks have all cleared in your old bank account and all automatic withdrawals have transferred, you can close the old account.
+                   
+                <p><strong>Q. What is a direct deposit?</strong><br />
+                A.  Direct deposit is a fast, simple and secure method of receiving funds, such as your paycheck, government benefits, and investment dividends, to name a few. Small Business owners can also use direct deposit to receive credit card settlements and accounts receivable payments. Your funds are deposited electronically into your bank account. No need to worry about receiving a check and making a special trip to the bank.
+                   
+                <p><strong>Q. How do I set up a new direct deposit?</strong><br />
+                A.  You can use the Direct Deposit Authorization Form to set up a new direct deposit or to transfer an existing direct deposit to your Central Illinois Bank account.
+                  1.  Complete the Direct Deposit Authorization Form
+                  2.  Print, sign, attach a voided check or deposit ticket, and deliver or mail to the appropriate company
+                     
+                <p><strong>Q. Can I create more than one direct deposit?</strong><br />
+                A.  Yes, just complete a separate Direct Deposit Authorization Form for each Direct Deposit that you would like to initiate.
+                   
+                <p><strong>Q. What type of funds can I direct deposit?</strong><br />
+                A.  Most people use direct deposit for their paycheck, but you can also deposit various types of benefits and investment dividends. Small Business customers may use direct deposit for credit card settlements and accounts receivable payments just to name a few.
+                     
+                <p><strong>Q. When will my direct deposits start?</strong><br />
+                A.  As a general rule, it takes up to 2 pay periods (30 days) to establish a direct deposit with an employer.
+                     
+                <p><strong>Q. How can I verify my direct deposit request has been processed?</strong><br />
+                A.  You can verify your direct deposit set up or transfer by reviewing the recent deposits to your bank account using Central Illinois Bank's Online Banking service, by reviewing your printed bank statement or by calling the Customer Service phone number listed on your statement.
+                     
+                <p><strong>Q. What is an automatic bill payment (ACH debit)?</strong><br />
+                A.  Automatic bill payment is a convenient and efficient way of paying various types of companies (telephone, electric, credit card, insurance, etc.) for services or products provided. On the date your payment is due, funds are withdrawn from your bank account and sent electronically to the authorized companies.
+                     
+                <p><strong>Q. How do I set up a new automatic bill payment?</strong><br />
+                A.  You can use the Switch Kit to set up new automatic bill payments or to transfer existing automatic bill payments to your Central Illinois Bank account.
+                  1.  Complete the Automatic Payment Request Form
+                  2.  Print, sign, attach a voided check or deposit ticket and deliver or mail to the appropriate company
+                     
+                <p><strong>Q. When will my automatic bill payment start?</strong><br />
+                A.  As a general rule, it takes 2 billing cycles (30-60 days) to establish an automatic bill payment. Please plan any interim payments accordingly while your requests are processed.
+                     
+                <p><strong>Q. How can I verify my automatic bill payment request has been processed?</strong><br />
+                A.  You can verify your automatic bill payment set up or transfer by reviewing the recent withdrawals from your bank account using Central Illinois Bank's Online Banking service, by reviewing your printed monthly bank statement, by calling the Customer Service phone number listed on your statement or by reviewing your billing company's statement.
+                </p>
+
+                <p>For more information, contact a Personal Banker. <a href="locations.html" title="Central Illinois Bank Locations">Click here for locations</a>.</p>
+              </div>
+            <div><!-- row -->
+
           </div>
         </main>
 
@@ -239,7 +304,7 @@
           $("#alert").on('click', function (e){
             e.preventDefault();
             var href = this.href;
-            alertify.confirm("By clicking OK, you will be leaving Central Illnois Bank web site, click Cancel to remain.", function (e) {
+            alertify.confirm("By clicking OK, you will be leaving Central Illnois Bank website, click Cancel to remain.", function (e) {
               if (e) {
                 window.open(href);
               }
