@@ -21,7 +21,10 @@
         <link href='http://fonts.googleapis.com/css?family=Cabin:400,700italic' rel='stylesheet' type='text/css'>
 
                 <!-- Main Style Sheet -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css">'
+        <link rel="stylesheet" href="css/alertify.default.css">
+        <link rel="stylesheet" href="css/alertify.core.css">
+        <link rel="stylesheet" href="css/alertify.bootstrap.css">
 
         <!-- Modernizr -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -142,39 +145,64 @@
               </div><!--/.container -->
             </nav>
         </header>
-
         <main role="main">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                  <h2 class="text-center">Locations</h2>
-                  <a href="atmlocator.html" class="text-center"><h4>ATM Locator</h4></a>
-                  <p class="text-center">Central Illinois Bank has locations across central Illinois.  Please select a location below for more information.</p>
-                </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+               <h1 class="anchor">ATM Network</h1>
               </div>
-              <div class="row">
-                <div class="col-md-4">
-                </div>
-                <div class="col-md-4">
-                  <select class="form-control" ONCHANGE="location = this.options[this.selectedIndex].value;">
-                    <option value="#">Please Select Location</option>
-                    <option value="bloomington.html">Bloomington, IL</option>
-                    <option value="champaign.html">Champaign, IL</option>
-                    <option value="midtown.html">Champaign (Midtown), IL</option>
-                    <option value="danville.html">Danville, IL</option>
-                    <option value="monticello.html">Monticello, IL</option>
-                    <option value="peoria.html">Peoria, IL</option>
-                    <option value="urbana.html">Urbana, IL</option>
-                  </select>
-                </div>
-              </div> <!-- ./row -->
-              <div class="row spacer">
-                <div class="col-md-12">
-                  <iframe width="100%" height="480px" frameborder="0" draggable="false" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msid=212311534872740743646.0004f445d495528757e9e&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=40.622292,-88.637695&amp;spn=2.00129,3.515625&amp;z=8&amp;output=embed"></iframe>
-                </div>
-              </div><!-- /.row -->
-            </div><!-- /.container -->
+            </div><!-- row -->
+            <div class="row spacer">
+              <div class="col-md-12">
+                <p class="text-center">Central Illinois Bank provides surcharge-free ATM service to our FlashPoint debit cardholders at the following banking offices:</p>
+              </div>
+            </div><!-- row -->
+            <div class="row spacer">
+              <div class="col-md-3">
+                <h5 class="text-center">Bloomington</h5>
+                <p class="text-center">1801 E. Empire Street<br>Bloomington, IL 61704<br>Phone: (309) 662-1839</p>
+              </div>
+              <div class="col-md-3">
+                <h5 class="text-center">Champaign</h5>
+                <p class="text-center">12913 W. Kirby Avenue<br>Champaign, IL 61821<br>Phone: (217) 355-0900</p>
+              </div>
+              <div class="col-md-3">
+                <h5 class="text-center">Peoria</h5>
+                <p class="text-center">4125 N. Sheridan Road<br>Peoria, IL 61614<br>Phone: (309) 690-7017</p>
+              </div>
+              <div class="col-md-3">
+                <h5 class="text-center">Urbana</h5>
+                <p class="text-center">1514 N. Cunningham Avenue<br>Urbana, IL 61802<br>Phone: (217) 328-7000</p>
+              </div>
+            </div><!-- row -->
+            <div class="row spacer">
+              <div class="col-md-6">
+                <h5>Locate more Falshpoint surcharge-free ATM's</h5>
+              </div>
+            </div><!-- row -->
+            <div class="row spacer">
+              <div class="col-md-1">
+                <a href="http://www.star.com/locator" class="alertexit" class="text-center" title="Star ATM Locator">Star</a>
+              </div>
+              <div class="col-md-1">
+                <a href="http://www.allpointnetwork.com" class="alertexit" class="text-center" title="Allpoint ATM Locator">Allpoint</a>
+              </div>
+              <div class="col-md-2">
+                <a href="http://www.atmallianceone.org/allianceOne" class="alertexit" class="text-center" title="Alliance One ATM Locator">Alliance One</a>
+              </div>
+            </div><!-- row -->
+            <div class="row spacer">
+              <div class="col-md-12">
+                <p>In addition, as a Central Illinois Bank Flashpoint cardholder you have access to surcharge free ATM terminals in the <a href="http://www.star.com/locator" class="alertexit" title="Star ATM Locator">Star</a>, <a href="http://www.allpointnetwork.com" class="alertexit" title="Allpoint ATM Locator">Allpoint</a>and <a href="http://www.atmallianceone.org/allianceOne" class="alertexit" title="Alliance One ATM Locator">Alliance One</a> networks providing thousands of ATM locations world-wide.  A minimal transaction fee may be assessed for transactions processed at ATM  terminals other than those in the networks listed above by the owner of that ATM.</p>
+                <p>For more information, contact a Personal Banker. <a href="locations.html" title="Central Illinois Bank Locations">Click here for locations</a>.</p>
+              </div>
+            <div><!-- row -->
+
+          </div>
         </main>
+
+
+
 
         <footer role="contentinfo">
 
@@ -184,11 +212,11 @@
                 <div class="col-sm-4 col-md-4">
                   <h3></h3>
                   <ul>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#">Security Statement</a></li>
-                    <li><a href="#">FDIC Information</a></li>
-                    <li><a href="#">Account Disclousers</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms of use</a></li>
+                    <li><a href="security.html">Security Statement</a></li>
+                    <li><a href="fdic.html">FDIC Information</a></li>
+                    <li><a href="disclousers.html">Account Disclousers</a></li>
                   </ul>
                 </div>
                 <div class="col-sm-4 col-md-2">
@@ -197,22 +225,21 @@
               <!-- Add the extra clearfix for only the required viewport -->
               <div class="clearfix visible-sm"></div>
 
-              <div class="about col-sm-12 col-md-6">
+              <div class="about col-sm-12 col-md-8">
                 <h3>About Us</h3>
-                <p>Central Illinois Bank is a branch of CIBM Bank which serves communities throughout Central Illinois.  At our full-service banking offices you'll find a full array of Personal and Business services to help you create the life you want and to help your business continue to be successful. We work hard to be your partner and we understand that this means listening and responding to the unique needs of you and your company. We are committed to creating customized solutions to assist you in achieving growth and stability.</p>
+                <p>Central Illinois Bank, as a part of CIBM Bank, serves communities throughout Central Illinois.  At our full-service banking offices you'll find a full array of Personal and Business services to help you create the life you want and to help your business continue to be successful. We work hard to be your partner and we understand that this means listening and responding to the unique needs of you and your company. We are committed to creating customized solutions to assist you in achieving growth and stability.</p>
                 <p><a class="btn btn-default btn-xs pull-right" href="#">Learn more <span class="fa fa-arrow-circle-right"></span></a></p>
               </div>
             </div><!-- /.row -->
 
             <ul class="social">
-              <div class="fb-like" data-href="https://www.facebook.com/pages/Central-Illinois-Bank/157832827742754" data-width="100px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-              <!-- <li><a href="#" title="Twitter Profile"><span class="icon fa fa-twitter"></span></a></li>
-              <li><a href="#" title="Facebook Page"><span class="icon fa fa-facebook"></span></a></li>
+              <li><a href="https://twitter.com/centilbank" title="Twitter Profile"><span class="icon fa fa-twitter"></span></a></li>
+              <li><a href="https://www.facebook.com/pages/Central-Illinois-Bank/157832827742754" title="Facebook Page"><span class="icon fa fa-facebook"></span></a></li>
               <li><a href="#" title="LinkedIn Profile"><span class="icon fa fa-linkedin"></span></a></li>
-              <li><a href="#" title="Google+ Profile"><span class="icon fa fa-google-plus"></span></a></li> -->
+              <!-- <li><a href="#" title="Google+ Profile"><span class="icon fa fa-google-plus"></span></a></li> -->
             </ul>
 
-            <p class="footer-brand"><a href="index.html"><img src="img/ciblogo.png" width="120" alt="Bootstrappin'"></a></p>
+            <p class="footer-brand"><a href="index.html"><img src="img/ciblogo.png" width="120" alt="CIB Bank"></a></p>
             <p class="footer-brand"><img src="img/footer-logo.png"></p>
 
           </div><!-- /.container -->
@@ -225,10 +252,21 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/bootstrap-hover-dropdown.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script src="js/alertify.min.js"></script>
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+          $(".alertexit").on('click', function (e){
+            e.preventDefault();
+            var href = this.href;
+            alertify.confirm("By clicking OK, you will be leaving Central Illnois Bank website, click Cancel to remain.", function (e) {
+              if (e) {
+                window.open(href);
+              }
+            });
+          });
+        </script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-42196149-1'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
