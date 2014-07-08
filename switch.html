@@ -164,6 +164,17 @@
                         <li>Switch your Social Security direct deposits by calling (800) 772-1213 or using their website <a href="http://www.ssa.gov" id="alert" title="Social Security Administration">www.ssa.gov</a></li>
                       </ul>
                     </li>
+                    <li>Redirect your automatic payments
+                      <ul>
+                        <li>Complete an Automatic Payment Request Form for each automatic payment you currently have set up or would like to begin
+                        (example: Auto Loan, Mortgage Payment, etc.)</li>
+                      </ul>
+                    </li>
+                  </li>Close your old bank accounts
+                    <ul>
+                      <li>Ensure that all checks and transactions have cleared before you close the account</li>
+                      <li>Complete the Account Closing Form</li>
+                      <li>Mail the completed form to your previous bank</li>
                   </ol>
                 </p>
               </div>
@@ -230,7 +241,7 @@
             var href = this.href;
             alertify.confirm("By clicking OK, you will be leaving Central Illnois Bank web site, click Cancel to remain.", function (e) {
               if (e) {
-                window.location.href = href;
+                window.open(href);
               }
             });
           });
