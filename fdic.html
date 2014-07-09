@@ -22,6 +22,9 @@
 
                 <!-- Main Style Sheet -->
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/alertify.default.css">
+        <link rel="stylesheet" href="css/alertify.core.css">
+        <link rel="stylesheet" href="css/alertify.bootstrap.css">
 
         <!-- Modernizr -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -148,11 +151,11 @@
               <div class="col-md-12">
                 <h1 class="anchor">FDIC Information Center</h1>
                 <h4>Deposit Information Center</h4>
-                <p>As an insured bank and FDIC member, Central Illinois Bank has compiled useful links to important information related to the <a href="http://www.fdic.gov" onClick="return confirm('Upon clicking ok, you will be leaving Central Illinois Bank website.  Click Cancel to remain.')" target="blank">Federal Deposit Insurance Corporation (FDIC)</a> for your convenience.</p>
-                <p><a href="http://www.fdic.gov" onClick="return confirm('Upon clicking ok, you will be leaving Central Illinois Bank website.  Click Cancel to remain.')" target="blank"><u>FDIC Home Page</u></a></p>
-                <p><a href="http://www.fdic.gov/consumers/consumer/alerts" onClick="return confirm('Upon clicking ok, you will be leaving Central Illinois Bank website.  Click Cancel to remain.')" target="blank"><u>FDIC Fraud Alerts</u></a></p>
-                <p><a href="http://www.fdic.gov/consumers/consumer/news/index.html" onClick="return confirm('Upon clicking ok, you will be leaving Central Illinois Bank website.  Click Cancel to remain.')" target="blank"><u>FDIC Consumer News</u></a></p>
-                <p><a href="http://www.fdic.gov/quicklinks/consumers.html" onClick="return confirm('Upon clicking ok, you will be leaving Central Illinois Bank website.  Click Cancel to remain.')" target="blank"><u>FDIC Quick Links for Consumers &amp; Communities</u></a></p>
+                <p>As an insured bank and FDIC member, Central Illinois Bank has compiled useful links to important information related to the <a href="http://www.fdic.gov" class="alertexit">Federal Deposit Insurance Corporation (FDIC)</a> for your convenience.</p>
+                <p><a href="http://www.fdic.gov" class="alertexit"><u>FDIC Home Page</u></a></p>
+                <p><a href="http://www.fdic.gov/consumers/consumer/alerts" class="alertexit"><u>FDIC Fraud Alerts</u></a></p>
+                <p><a href="http://www.fdic.gov/consumers/consumer/news/index.html" class="alertexit"><u>FDIC Consumer News</u></a></p>
+                <p><a href="http://www.fdic.gov/quicklinks/consumers.html" class="alertexit"><u>FDIC Quick Links for Consumers &amp; Communities</u></a></p>
               
 
               </div>
@@ -213,6 +216,18 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/bootstrap-hover-dropdown.js"></script>
+        <script src="js/alertify.min.js"></script>
+        <script>
+          $(".alertexit").on('click', function (e){
+            e.preventDefault();
+            var href = this.href;
+            alertify.confirm("By clicking OK, you will be leaving Central Illnois Bank website, click Cancel to remain.", function (e) {
+              if (e) {
+                window.open(href);
+              }
+            });
+          });
+        </script>
 
         <script>
             var _gaq=[['_setAccount','UA-42196149-1'],['_trackPageview']];

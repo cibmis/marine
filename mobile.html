@@ -22,6 +22,9 @@
 
                 <!-- Main Style Sheet -->
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/alertify.default.css">
+        <link rel="stylesheet" href="css/alertify.core.css">
+        <link rel="stylesheet" href="css/alertify.bootstrap.css">
 
         <!-- Modernizr -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -221,8 +224,8 @@
                   <li>Deposit checks via Mobile Device (Subject to Approval, see local branch for more information)</li>
                 </ul>
                 <p>Online Banking customers: Simply download the CIBM Bank app from your smartphone or tablet and log in with your Online Banking User ID and Password.</p>
-                <a href="https://play.google.com/store/apps/details?id=com.jackhenry.cibmbankil&amp;hl=en"><img src="img/google-play-logo.png" width="135" height="40" alt="Download Google Play App for CIBM Bank" /></a>
-                <a href="https://itunes.apple.com/us/app/cibm-bank-mobile-banking/id656267239?mt=8"><img src="img/download_AppStoreBadge.png" width="135" height="40" alt="Download CIBM Bank Mobile Banking from App Store" /></a>
+                <a href="https://play.google.com/store/apps/details?id=com.jackhenry.cibmbankil&amp;hl=en" class="alertexit"><img src="img/google-play-logo.png" width="135" height="40" alt="Download Google Play App for CIBM Bank" /></a>
+                <a href="https://itunes.apple.com/us/app/cibm-bank-mobile-banking/id656267239?mt=8" class="alertexit"><img src="img/download_AppStoreBadge.png" width="135" height="40" alt="Download CIBM Bank Mobile Banking from App Store" /></a>
               </div>
             </div> <!--row -->
             </div><!-- /.container -->
@@ -276,6 +279,18 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/bootstrap-hover-dropdown.js"></script>
+        <script src="js/alertify.min.js"></script>
+        <script>
+          $(".alertexit").on('click', function (e){
+            e.preventDefault();
+            var href = this.href;
+            alertify.confirm("By clicking OK, you will be leaving Central Illnois Bank website, click Cancel to remain.", function (e) {
+              if (e) {
+                window.open(href);
+              }
+            });
+          });
+        </script>
 
         <script>
             var _gaq=[['_setAccount','UA-42196149-1'],['_trackPageview']];
