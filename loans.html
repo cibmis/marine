@@ -9,7 +9,7 @@
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Central Illinois Bank Retirement Products</title>
+        <title>Central Illinois Bank Savings Products</title>
         <meta name="description" content="Central Illinois Bank provides Personal and Commercial Banking Solutions to the Champaign, Urbana, Bloomington, Peoria, Danville and Monticello areas.">
         <meta name="keywords" content="Checking, Banking, Commercial, Mobile Banking, Online Banking, Rewards, Interest, Loan, Champaign, Urbana, Bloomington, Peoria, Danville, Monticello">
         <meta name="viewport" content="width=device-width">
@@ -22,6 +22,9 @@
 
                 <!-- Main Style Sheet -->
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/alertify.default.css">
+        <link rel="stylesheet" href="css/alertify.core.css">
+        <link rel="stylesheet" href="css/alertify.bootstrap.css">
 
         <!-- Modernizr -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -71,7 +74,7 @@
                       <a href="index.html" class="visible-md visible-lg"><i class="icon fa fa-home"></i> Home</a>
                     </li>
                     <li class="dropdown visible-md visible-lg">
-                        <a href="personal.html" class="dropdown-toggle disabled" data-toggle="dropdown" data-hover="dropdown"><i class="icon fa fa-user"></i> Personal <b class="caret"></b></a>
+                        <a href="personal.html" class="dropdown-toggle disbaled" data-toggle="dropdown" data-hover="dropdown"><i class="icon fa fa-user"></i> Personal <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                           <li><a href="acceleration.html">Acceleration Banking</a><a href=""></a></li>
                           <li class="divider"></li>
@@ -86,7 +89,7 @@
                         </ul>
                     </li>
                     <li class="dropdown visible-md visible-lg">
-                        <a href="business.html" class="dropdown-toggle disabled" data-toggle="dropdown" data-hover="dropdown"><i class="icon fa fa-users"></i> Business <b class="caret"></b></a>
+                        <a href="business.html" class="dropdown-toggle disbled" data-toggle="dropdown" data-hover="dropdown"><i class="icon fa fa-users"></i> Business <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                           <li><a href="businesschecking.html">Checking Solutions</a></li>
                           <li><a href="businesssavings.html">Savings Solutions</a></li>
@@ -145,32 +148,51 @@
         <main role="main">
           <div class="container">
             <div class="row row-background img-rounded">
-              <div class="col-md-3 col-md-offset-1">
-                <p><a href="#ira"><h4 class="text-center">Traditional<br> IRA</h4></a></p>
-                <a href="#ira"><img src="http://placehold.it/150x150" class="img-circle center-block"></a>
-                <p class="text-center spacer">Individual Retirement Accounts may offer tax advantages that help you achieve your future goals.  Traditional IRAs can offer immediate tax advantages.</p>
+              <div class="col-md-2">
+                <p><a href="#mortgage"><h4 class="text-center">Mortgages<br/><br/></h4></a></p>
+                <a href="#mortgage"><img src="http://placehold.it/150x150" class="img-circle center-block"></a>
+                <p class="text-center spacer">Buying a home is a big decision.  Avenue Mortgage, a division of CIBM Bank is here to give you the right choices.</p>
               </div>
-              <div class="col-md-3">
-                <p><a href="#roth"><h4 class="text-center">Roth<br> IRA</h4></a></p>
-                <a href="#roth"><img src="http://placehold.it/150x150" class="img-circle center-block"></a>
-                <p class="text-center spacer">A Roth IRA may be more appropriate if you expect your tax rate to be the same as it is today or higher during retirement.  </p>
+              <div class="col-md-2">
+                <p><a href="#homeequity"><h4 class="text-center">Home<br>Equity</h4></a></p>
+                <a href="#homeequity"><img src="http://placehold.it/150x150" class="img-circle center-block"></a>
+                <p class="text-center spacer">Put your equity to work for you.  With many benefits, our product options are the better way to finance.</p>
               </div>
-              <div class="col-md-3">
-                <p><a href="#pension"><h4 class="text-center">Simplified Employee Pension</h4></a></p>
-                <a href="#pension"><img src="http://placehold.it/150x150" class="img-circle center-block"></a>
-                <p class="text-center spacer">The Simplified Employee Pension IRA plan allows business owners to provide retirement benefits to their employees.  It is the perfect option for those who are self employed.</p>
+              <div class="col-md-2">
+                <p><a href="#autoloan"><h4 class="text-center">Auto<br>Loans</h4></a></p>
+                <a href="#autoloan"><img src="http://placehold.it/150x150" class="img-circle center-block"></a>
+                <p class="text-center spacer">Finding a car loan with competitive rates can be as easy as applying at Central Illinois Bank.  We are here to help you finance your vehicle.</p>
               </div>
-            </div> <!-- row -->
+              <div class="col-md-2">
+                <p><a href="#personal"><h4 class="text-center">Personal<br/>Loan</h4></a></p>
+                <a href="#personal"><img src="http://placehold.it/150x150" class="img-circle center-block"></a>
+                <p class="text-center spacer">Personal loans come in a variety of shapes and sizes.  Just let us know what you are looking for.</p>
+              </div>
+              <div class="col-md-2">
+                <p><a href="#specialty"><h4 class="text-center">Specialty<br/>Loans</h4></a></p>
+                <a href="#specialty"><img src="http://placehold.it/150x150" class="img-circle center-block"></a>
+                <p class="text-center spacer">Are you looking to purchase an RV or Boat?  Central Illinois Bank can help you finance those dreams.</p>
+              </div>
+              <div class="col-md-2">
+                <p><a href="#creditcards"><h4 class="text-center">Credit<br/>Cards</h4></a></p>
+                <a href="#creditcards"><img src="http://placehold.it/150x150" class="img-circle center-block"></a>
+                <p class="text-center spacer">With five different cards to choose from, we have the perfect credit card for you.</p>
+              </div>
+            </div><!-- row -->
+            <div class="row spacer">
+              <div class="col-md-12">
+                <img src="img/Web_inner_HELOC.jpg" class="center-block">
+                <p align="left"><font size="-2" face="Arial, Helvetica, sans-serif">*Annual Percentage Rate (APR) effective 7/1/14. Applications taken through 8/31/14 and closed by 9/15/14 guaranteed advertised rate. **Closing fees waived for home equity lines of credit up to $100,000 and range from $400-$2,000 for loans $100,000 or greater. Minimum loan amount $5,000. Offer available for owner occupied residences only and are subject to credit approval. Advertised rate applies to new home equity credit accounts and not available for refinancing of existing CIBM Bank accounts. Property insurance and flood insurance (if applicable) required. Rate after six months will vary and is based on credit history and tied to Prime. Non promotional rates as of 7/1/14 vary from 4.00 %-18% APR. Maximum APR will not exceed 18%. Early termination fee of $250 will be assessed if credit line is closed within 24 months. (Early termination may not be applicable in all states.) †Consult a tax advisor regarding the deductibility of interest. All terms and conditions of this offer are subject to change at any time without notice. Under certain circumstances access to credit can be frozen, reduced or terminated. </font><br /></p>
+
             <div class="row spacer">
               <div class="col-md-6">
-                <a class="anchor" name="ira"><h2>Traditional IRA</h2></a>
-                <p>Traditional IRAs are generally a good option if you are eligible to make deductible contributions and expect your tax rate to be lower that it is today in retirement.</p>
+                <a class="anchor text-center" name="mortgage"><h2>Mortgages</h2></a>
+                <p>We are pleased to offer full service mortgage planning through <a href="http://www.avenuemortgage.com" class="alertexit">Avenue Mortgage</a>, a division of CIBM Bank.  If you are buying a new home or considering a mortgage refinance, contact your Personal Banker.</p>
                 <ul>
-                  <li>You are eligible if you have earned income and will be under the age of 70 ½ on December 31</li>
-                  <li>Your funds are eligible for withdrawal at or after age 59 ½
-                  <li>Contributions may be tax deductible</li>
-                  <li>Earning grow tax-deferred until withdrawn</li>
-                  <li>Always consult a tax advisor</li>
+                  <li>Competitive Rates</li>
+                  <li>Flexible Terms</li>
+                  <li>Staff you can trust and depend on</li>
+                  <li>Close your loan with ease and peace of mind</li>
                 </ul>
               </div>
               <div class="col-md-6">
@@ -182,30 +204,77 @@
                 <img class="picture" src="http://placehold.it/800x600">
               </div>
               <div class="col-md-6">
-                <a class="anchor" name="roth"><h2>Roth IRA</h2></a>
-                <p>If your income excludes you from getting a deduction for contributions a Roth IRA might be the right choice for you.</p>
+                <a class="anchor" name="homeequity"><h2>Home Equity</h2></a>
+                <p>If you own your own home, your best source of borrowing is right where you are.  We offer two different options that allow you to utilize the equity you have in your home.  We offer both fixed rate home equity loans and home equity lines of credit.  We can transform that equity to help you:</p>
                 <ul>
-                  <li>Earned Income Required</li>
-                  <li>Contributions are not tax deductible and can be withdrawn tax free at any time</li>
-                  <li>Earnings are tax free if over 59 ½ and account has been open 5 or more years</li>
-                  <li>Income based contribution limits may apply</li>
-                  <li>Always consult a tax advisor</li>
+                  <li>Finance Home Improvements and Projects</li>
+                  <li>Consolidate Debt</li>
+                  <li>Purchase a Vehicle</li>
+                  <li>Prepare for Unexpected Expenses</li>
+                  <li>Manage Your Personal Cash Flow</li>
+                  <li>Satisfy Other Financing Needs</li>
                 </ul>
               </div>
             </div><!-- row -->
-             <div class="row spacer">
+            <div class="row spacer">
               <div class="col-md-6">
-                <a class="anchor" name="pension"><h2>Simplified Employee Pension</h2></a>
-                <p>A SEP IRA allows eligible employees and self employed individuals to benefit from all the advantages of a Traditional IRA, but with higher contribution limits.</p>
+                <a class="anchor" name="autoloan"><h2>Auto Loans</h2></a>
+                <p>Central Illinois Bank has options for you whether you are looking to purchase a new car, your dream car, or finance your next vehicle.</p>
                 <ul>
-                  <li>Funds are invested tax deferred</li>
-                  <li>Money contributed to the SEP IRA belongs to the employee immediately</li>
-                  <li>The plan is established by the employer</li>
-                  <li>Always consult your tax advisor</li>
+                  <li>Competitive Rates</li>
+                  <li>Personal Service</li> 
+                  <li>Automatic Payment Options</li>
+                  <li>Manage Your Loan Online</li>
                 </ul>
               </div>
               <div class="col-md-6">
                 <img class="picture" src="http://placehold.it/800x600">
+              </div>
+            </div><!-- row -->
+            <div class="row spacer">
+              <div class="col-md-6">
+                <img class="picture" src="http://placehold.it/800x600">
+              </div>
+              <div class="col-md-6">
+                <a class="anchor" name="personal"><h2>Personal Loans</h2></a>
+                <p>When you need extra money but don’t want to draw on your savings and investments, talk to us about a personal loan.  We offer a variety of secured and unsecured loans at competitive rates.  Some of the options include:</p>
+                <ul>
+                  <li>Unsecured Personal Loans</li>
+                  <li>CD Secured Loans</li>
+                  <li>Savings Secured Loans</li>
+                  <li>Money Market Secured Loans</li>
+                  <li>Stock Secured Loans</li>
+                </ul>
+              </div>
+            </div><!-- row -->
+            <div class="row spacer">
+              <div class="col-md-6">
+                <a class="anchor" name="specialty"><h2>Specialty Loans</h2></a>
+                <p>Central Illinois Bank offers loans for some of those bigger special purchases that will allow you to finance the expense, so you can start enjoying the purchase right away.  These options include:</p>
+                <ul>
+                  <li>RV Loans</li>
+                  <li>Boat Loans</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <img class="picture" src="http://placehold.it/800x600">
+              </div>
+            </div><!-- row -->
+            <div class="row spacer">
+              <div class="col-md-6">
+                <img class="picture" src="http://placehold.it/800x600">
+              </div>
+              <div class="col-md-6">
+                <a class="anchor" name="creditcards"><h2>Credit Cards</h2></a>
+                <p>We have the card for you.  Central Illinois Bank has partnered with Elan Financial Services – one of the largest and most experienced Visa card issuers in the nation – to provide you with an excellent range of credit card services and benefits.  We offer a variety of options; whether you are looking for a card that earns rewards, a card to help you build credit, or something in between, we have the right credit card for you.  </p>
+                <ul>
+                  <li>Visa Signature Bonus Rewards Card</li>
+                  <li>Visa Signature Bonus Rewards PLUS Card</li>
+                  <li>Visa Platinum Card</li>
+                  <li>College Rewards Visa Card</li>
+                  <li>Secured Visa Card</li>
+                </ul>
+                <p>Existing cardholders may click <a href="https://www.myaccountaccess.com/onlineCard/login.do" class="alertexit">here</a> to access their accounts.</p>
               </div>
             </div><!-- row -->
 
@@ -244,9 +313,9 @@
             </div><!-- /.row -->
 
             <ul class="social">
-              <li><a href="https://twitter.com/centilbank" title="Twitter Profile"><span class="icon fa fa-twitter"></span></a></li>
-              <li><a href="https://www.facebook.com/pages/Central-Illinois-Bank/157832827742754" title="Facebook Page"><span class="icon fa fa-facebook"></span></a></li>
-              <li><a href="#" title="LinkedIn Profile"><span class="icon fa fa-linkedin"></span></a></li>
+              <li><a href="https://twitter.com/centilbank" class="alertexit" title="Twitter Profile"><span class="icon fa fa-twitter"></span></a></li>
+              <li><a href="https://www.facebook.com/pages/Central-Illinois-Bank/157832827742754" class="alertexit" title="Facebook Page"><span class="icon fa fa-facebook"></span></a></li>
+              <li><a href="#" class="alertexit" title="LinkedIn Profile"><span class="icon fa fa-linkedin"></span></a></li>
               <!-- <li><a href="#" title="Google+ Profile"><span class="icon fa fa-google-plus"></span></a></li> -->
             </ul>
 
@@ -263,6 +332,18 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/bootstrap-hover-dropdown.js"></script>
+        <script src="js/alertify.min.js"></script>
+        <script>
+          $(".alertexit").on('click', function (e){
+            e.preventDefault();
+            var href = this.href;
+            alertify.confirm("By clicking OK, you will be leaving Central Illnois Bank website, click Cancel to remain.", function (e) {
+              if (e) {
+                window.open(href);
+              }
+            });
+          });
+        </script>
 
         <script>
             var _gaq=[['_setAccount','UA-42196149-1'],['_trackPageview']];
