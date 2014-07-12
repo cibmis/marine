@@ -1,0 +1,70 @@
+<footer role="contentinfo">
+
+          <div class="container">
+            <div class="row">
+
+                <div class="col-sm-4 col-md-4">
+                  <h3></h3>
+                  <ul>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms of use</a></li>
+                    <li><a href="security.html">Security Statement</a></li>
+                    <li><a href="fdic.html">FDIC Information</a></li>
+                    <li><a href="disclosures.html">Account Disclosures</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                </div>
+
+              <!-- Add the extra clearfix for only the required viewport -->
+              <div class="clearfix visible-sm"></div>
+
+              <div class="about col-sm-12 col-md-8">
+                <h3>About Us</h3>
+                <p>Central Illinois Bank, as a part of CIBM Bank, serves communities throughout Central Illinois.  At our full-service banking offices you'll find a full array of Personal and Business services to help you create the life you want and to help your business continue to be successful. We work hard to be your partner and we understand that this means listening and responding to the unique needs of you and your company. We are committed to creating customized solutions to assist you in achieving growth and stability.</p>
+                <p><a class="btn btn-default btn-xs pull-right" href="#">Learn more <span class="fa fa-arrow-circle-right"></span></a></p>
+              </div>
+            </div><!-- /.row -->
+
+            <ul class="social">
+              <li><a href="https://twitter.com/centilbank" class="alertexit" title="Twitter Profile"><span class="icon fa fa-twitter"></span></a></li>
+              <li><a href="https://www.facebook.com/pages/Central-Illinois-Bank/157832827742754" class="alertexit" title="Facebook Page"><span class="icon fa fa-facebook"></span></a></li>
+              <li><a href="#" class="alertexit" title="LinkedIn Profile"><span class="icon fa fa-linkedin"></span></a></li>
+              <!-- <li><a href="#" title="Google+ Profile"><span class="icon fa fa-google-plus"></span></a></li> -->
+            </ul>
+
+            <p class="footer-brand"><a href="index.html"><img src="img/ciblogo.png" width="120" alt="CIB Bank"></a></p>
+            <p class="footer-brand"><img src="img/footer-logo.png"></p>
+
+          </div><!-- /.container -->
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <!-- Essential Plugins and Main JavaScript File -->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap-hover-dropdown.js"></script>
+        <script src="js/alertify.min.js"></script>
+        <script>
+          $("#alert").on('click', function (e){
+            e.preventDefault();
+            var href = this.href;
+            alertify.confirm("By clicking OK, you will be leaving Central Illnois Bank website, click Cancel to remain.", function (e) {
+              if (e) {
+                window.open(href);
+              }
+            });
+          });
+        </script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-42196149-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+    </body>
+</html>
