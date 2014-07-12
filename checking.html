@@ -280,9 +280,9 @@
             </div><!-- /.row -->
 
             <ul class="social">
-              <li><a href="https://twitter.com/centilbank" title="Twitter Profile"><span class="icon fa fa-twitter"></span></a></li>
-              <li><a href="https://www.facebook.com/pages/Central-Illinois-Bank/157832827742754" title="Facebook Page"><span class="icon fa fa-facebook"></span></a></li>
-              <li><a href="#" title="LinkedIn Profile"><span class="icon fa fa-linkedin"></span></a></li>
+              <li><a href="https://twitter.com/centilbank" class="alertexit" title="Twitter Profile"><span class="icon fa fa-twitter"></span></a></li>
+              <li><a href="https://www.facebook.com/pages/Central-Illinois-Bank/157832827742754" class="alertexit" title="Facebook Page"><span class="icon fa fa-facebook"></span></a></li>
+              <li><a href="#" class="alertexit" title="LinkedIn Profile"><span class="icon fa fa-linkedin"></span></a></li>
               <!-- <li><a href="#" title="Google+ Profile"><span class="icon fa fa-google-plus"></span></a></li> -->
             </ul>
 
@@ -299,6 +299,18 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/bootstrap-hover-dropdown.js"></script>
+        <script src="js/alertify.min.js"></script>
+        <script>
+          $("#alert").on('click', function (e){
+            e.preventDefault();
+            var href = this.href;
+            alertify.confirm("By clicking OK, you will be leaving Central Illnois Bank website, click Cancel to remain.", function (e) {
+              if (e) {
+                window.open(href);
+              }
+            });
+          });
+        </script>
 
         <script>
             var _gaq=[['_setAccount','UA-42196149-1'],['_trackPageview']];
