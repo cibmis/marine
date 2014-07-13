@@ -6518,6 +6518,9 @@ main .content-tertiary {
 main .picture {
   max-width: 100%;
   padding-bottom: 20px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #FFFFFF;
 }
 main .spacer {
   margin-top: 20px;
