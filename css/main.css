@@ -6560,7 +6560,8 @@ footer[role="contentinfo"] a:focus:hover,
 footer[role="contentinfo"] a:focus:active {
   color: #007ee2;
 }
-footer[role="contentinfo"] .about p {
+footer[role="contentinfo"] .about p,
+footer[role="contentinfo"] .about h3 {
   color: #FFFFFF;
 }
 footer[role="contentinfo"] ul {
