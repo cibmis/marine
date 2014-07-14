@@ -6558,7 +6558,7 @@ footer[role="contentinfo"] {
 }
 footer[role="contentinfo"] a:focus:hover,
 footer[role="contentinfo"] a:focus:active {
-  color: #ffffff;
+  color: #007ee2;
 }
 footer[role="contentinfo"] ul {
   list-style: none;
