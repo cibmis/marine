@@ -6560,6 +6560,9 @@ footer[role="contentinfo"] a:focus:hover,
 footer[role="contentinfo"] a:focus:active {
   color: #007ee2;
 }
+footer[role="contentinfo"] .about p {
+  color: #000000;
+}
 footer[role="contentinfo"] ul {
   list-style: none;
   padding: 0;
