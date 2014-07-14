@@ -6544,7 +6544,7 @@ main .white-back {
 }
 @media (min-width: 768px) {
   main .row-background {
-    background-color: #FFB273;
+    background-color: #0177D1;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -6553,7 +6553,7 @@ footer[role="contentinfo"] {
   padding-top: 24px;
   padding-bottom: 24px;
   font-size: 12px;
-  background-color: #006A55;
+  background-color: #00D77B;
   color: #aeaeae;
 }
 footer[role="contentinfo"] a:focus:hover,
