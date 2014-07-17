@@ -99,9 +99,9 @@
 				.alertify-button-ok:focus,
 				.alertify-button-ok:active {
 					text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-					background-color: #FF7400;
-					border: 1px solid #FF7400;
-					border-color: #FF7400 #FF7400 #002A80;
+					background-color: #00457C;
+					border: 1px solid #00457C;
+					border-color: #00457C #00457C #002A80;
 					border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 					color: #FFF;
 				}
